@@ -1,11 +1,15 @@
 {
   "name": "restform",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "sending from data with post ajax request",
   "main": "restform.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository" :
+    { "type" : "git", 
+      "url" : "https://github.com/eddyLazar/restform"
+    }
 }
