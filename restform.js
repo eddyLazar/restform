@@ -46,7 +46,7 @@
                 method: 'POST',
                 url: base.options.url,
                 data: formData,
-                headers: base.options.headers
+                headers: base.options.headers,
                 // THIS MUST BE DONE FOR FILE UPLOADING
                 contentType: false,
                 processData: false,
