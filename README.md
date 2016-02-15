@@ -1,6 +1,6 @@
 # restform.js 
 
-A lightweight, easy-to-use jQuery plugin for sending AJAX `POST` request to given `url`, on form submit woth form data. Sending files also availible.
+A lightweight, easy-to-use jQuery plugin for sending AJAX `POST` request to given `url`, on form submit with form data. Sending files also availible.
 
 
 
