@@ -34,9 +34,10 @@ RestForm plugin triggers.
 
 - `additionalFormData` additional form data to send
 
-- `formValid` this function is called before starting request, if `false` request won't be started, default : `true`
+- `formValid` this function is called before starting request, if `false` request won't be started, default : `true`. Accepts `el`(a form jquery instance) as a first argument.
 - `triggerStartName` trigger event name, default `form:loading:start`
 - `triggerEndName` trigger event name, default `form:loading:end`
+- `headers` custom request headers
 
 
 ##Install

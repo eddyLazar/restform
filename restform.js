@@ -16,6 +16,11 @@
             base.options = $.extend({}, $.restForm.defaultOptions, options);
             // Put your initialization code here
         };
+        
+        
+        base.formValid = function() {
+            return base.options.formValid(this.$el);
+        };
 
 
         base.getFormData = function() {
@@ -41,6 +46,7 @@
                 method: 'POST',
                 url: base.options.url,
                 data: formData,
+                headers: base.options.headers
                 // THIS MUST BE DONE FOR FILE UPLOADING
                 contentType: false,
                 processData: false,
@@ -61,8 +67,10 @@
         triggerEndName: 'form:loading:end',
         url: '/form/send/',
         additionalFormData: {},
-        formValid: function () {
+        formValid: function (el) {
           return true;
+        },
+        headers: {
         }
     };
 
@@ -73,7 +81,7 @@
             // HAVE YOUR PLUGIN DO STUFF HERE
             restFormObject.$el.submit(function(e) {
                 e.preventDefault();
-                if (restFormObject.options.formValid()) {
+                if (restFormObject.formValid()) {
                   restFormObject.postAjaxForm();  
                 }
             });
