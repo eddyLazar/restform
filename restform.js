@@ -14,7 +14,6 @@
         base.init = function() {
 
             base.options = $.extend({}, $.restForm.defaultOptions, options);
-            console.log(base.options);
             // Put your initialization code here
         };
 
